@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradi"
+    android:layout_height="match_parent"
+    tools:context=".secondpage">
+  <RelativeLayout
+      android:layout_width="250dp"
+      android:layout_height="100dp"
+      android:id="@+id/rel1"
+      android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/alata"
+        android:text="ROADMAPS"
+        android:textColor="#84CEFB"
+        android:textSize="40sp" />
+  </RelativeLayout>
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/rel1"
+      android:layout_marginTop="14dp"
+      >
+
+  <androidx.cardview.widget.CardView
+
+      android:foreground="?attr/selectableItemBackground"
+      android:clickable="true"
+      android:layout_width="160dp"
+      android:layout_height="160dp"
+     android:layout_marginStart="16dp"
+      android:layout_marginTop="20dp"
+      app:cardCornerRadius="20dp"
+      app:cardBackgroundColor="#1F94DC"
+      android:id="@+id/web"
+     >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:fontFamily="@font/comfortaa"
+        android:text="WEB DEV"
+        android:textColor="#BEE7FF"
+        android:textSize="27sp" />
+  </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:foreground="?attr/selectableItemBackground"
+      android:clickable="true"
+      android:layout_width="160dp"
+      android:layout_height="160dp"
+      android:layout_marginTop="20dp"
+      android:layout_toEndOf="@id/web"
+      app:cardCornerRadius="20dp"
+      app:cardBackgroundColor="#1F94DC"
+      android:layout_marginStart="7dp"
+      android:id="@+id/appli"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APP DEV"
+        android:layout_gravity="center"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="#BEE7FF"
+        android:textSize="27sp"
+        />
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:foreground="?attr/selectableItemBackground"
+      android:clickable="true"
+      android:layout_width="160dp"
+      android:layout_height="160dp"
+      android:layout_marginTop="7dp"
+      android:layout_below="@id/web"
+      app:cardCornerRadius="20dp"
+      app:cardBackgroundColor="#1F94DC"
+      android:id="@+id/dev"
+      android:layout_marginStart="16dp"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEV OPS"
+android:layout_gravity="center"
+
+        android:fontFamily="@font/comfortaa"
+        android:textColor="#BEE7FF"
+        android:textSize="27sp"
+        />
+  </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#1F94DC"
+        android:layout_below="@id/appli"
+        android:layout_toEndOf="@id/dev"
+        android:id="@+id/data"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="7dp"
+
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="DATA SCI"
+          android:layout_gravity="center"
+          android:fontFamily="@font/comfortaa"
+          android:textColor="#BEE7FF"
+          android:textSize="27sp">
+
+      </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#1F94DC"
+        android:layout_below="@id/dev"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/al"
+
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="AI/ML"
+          android:layout_gravity="center"
+          android:fontFamily="@font/comfortaa"
+          android:textColor="#BEE7FF"
+          android:textSize="27sp">
+      </TextView>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="#1F94DC"
+        android:layout_below="@id/data"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_toEndOf="@id/al"
+        android:id="@+id/network"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="7dp"
+
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="NETWORK"
+          android:layout_gravity="center"
+          android:fontFamily="@font/comfortaa"
+          android:textColor="#BEE7FF"
+          android:textSize="25sp">
+      </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+  </RelativeLayout>
